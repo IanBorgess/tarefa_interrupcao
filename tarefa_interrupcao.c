@@ -9,7 +9,6 @@
 #define button_B 6
 
 static volatile uint32_t last_time = 0;
-static volatile uint a = 1;
 
 bool botaoA = false;
 bool botaoB = false;
