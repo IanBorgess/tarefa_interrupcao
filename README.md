@@ -25,30 +25,6 @@ O código está organizado da seguinte forma:
   - `interrupcao()`: Função de interrupção que detecta o pressionamento dos botões e faz o debouncing.
   - `main()`: Função principal que inicializa o sistema e gerencia a exibição dos padrões na matriz de LEDs.
 
-## Como Funciona
-
-1. **Inicialização**: O sistema é inicializado configurando os pinos do LED e dos botões. A matriz de LEDs é configurada e o primeiro padrão é exibido.
-
-2. **Interrupções**: Quando um botão é pressionado, uma interrupção é gerada, e a função `interrupcao()` é chamada para atualizar o estado dos botões.
-
-3. **Navegação entre Padrões**: No loop principal, o LED pisca continuamente. Se um botão for pressionado, o contador de padrões é incrementado ou decrementado, e o novo padrão é exibido na matriz de LEDs.
-
-## Como Usar
-
-1. **Hardware Necessário**:
-   - Raspberry Pi Pico
-   - Matriz de LEDs
-   - Dois botões
-   - Resistores e jumpers
-
-2. **Compilação e Upload**:
-   - Utilize o ambiente de desenvolvimento compatível com o Raspberry Pi Pico (como o Visual Studio Code com a extensão Pico SDK).
-   - Compile o código e faça o upload para o Raspberry Pi Pico.
-
-3. **Execução**:
-   - Após o upload, o sistema iniciará automaticamente.
-   - Pressione os botões para navegar entre os diferentes padrões exibidos na matriz de LEDs.
-
 ## Exemplo de Uso
 
 - **Botão A**: Avança para o próximo padrão na matriz.
