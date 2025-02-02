@@ -1,4 +1,4 @@
-# Projeto de Controle de Matriz de LEDs com Raspberry Pi Pico
+# Projeto de Controle de Matriz de LEDs com Interrupções e Debouncing
 
 Este projeto utiliza um Raspberry Pi Pico para controlar uma matriz de LEDs, permitindo a exibição de diferentes padrões através da interação com dois botões. O código foi desenvolvido em C/C++ utilizando o SDK do Raspberry Pi Pico.
 
