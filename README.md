@@ -1,6 +1,8 @@
 # Projeto de Controle de Matriz de LEDs com Interrupções e Debouncing
 
-Este projeto utiliza um Raspberry Pi Pico para controlar uma matriz de LEDs, permitindo a exibição dos números de 0 a 9 através da interação com dois botões.
+Este projeto utiliza um Raspberry Pi Pico para controlar uma matriz de LEDs, permitindo a exibição dos números de 0 a 9 através da interação com dois botões. Link para o vídeo a seguir:
+
+[Clique aqui para ver o vídeo do projeto](https://youtube.com/shorts/A-6HVkjLbcQ?feature=share).
 
 ## Descrição do Projeto
 
