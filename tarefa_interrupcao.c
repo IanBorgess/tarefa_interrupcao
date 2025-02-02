@@ -116,21 +116,18 @@ void pisca_led(){
     sleep_ms(100);
 }
 
-void interrupcao(uint gpio, uint32_t events){
-
+void interrupcao(uint gpio, uint32_t events) {
+    static uint32_t last_time_A = 0;
+    static uint32_t last_time_B = 0;
     uint32_t current_time = to_ms_since_boot(get_absolute_time());
 
-    if(current_time - last_time > 200000)
-    {
-        last_time = current_time;
-        a++;
-    }
-
-    if(gpio == button_A){
+    if (gpio == button_A && (current_time - last_time_A > 200)) {
+        last_time_A = current_time;
         botaoA = true;
     }
-    
-    if(gpio == button_B){
+
+    if (gpio == button_B && (current_time - last_time_B > 200)) {
+        last_time_B = current_time;
         botaoB = true;
     }
 }
