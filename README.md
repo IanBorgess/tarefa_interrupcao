@@ -1,10 +1,10 @@
 # Projeto de Controle de Matriz de LEDs com Interrupções e Debouncing
 
-Este projeto utiliza um Raspberry Pi Pico para controlar uma matriz de LEDs, permitindo a exibição de diferentes padrões através da interação com dois botões. O código foi desenvolvido em C/C++ utilizando o SDK do Raspberry Pi Pico.
+Este projeto utiliza um Raspberry Pi Pico para controlar uma matriz de LEDs, permitindo a exibição dos números de 0 a 9 através da interação com dois botões.
 
 ## Descrição do Projeto
 
-O projeto consiste em uma matriz de LEDs que exibe diferentes desenhos pré-configurados. Dois botões são utilizados para navegar entre os desenhos: um botão para avançar e outro para retroceder. Além disso, um LED pisca continuamente para indicar que o sistema está em funcionamento.
+O projeto consiste em uma matriz de LEDs que exibe os números de 0 a 9 na matriz de leds WS2812. Dois botões são utilizados para navegar entre os desenhos: um botão para avançar e outro para retroceder. Além disso, um LED pisca continuamente em vermelho para indicar que o sistema está em funcionamento.
 
 ## Estrutura do Código
 
@@ -21,8 +21,8 @@ O código está organizado da seguinte forma:
 
 - **Funções**:
   - `setup()`: Configura os pinos do LED e dos botões.
-  - `pisca_led()`: Faz o LED piscar.
-  - `interrupcao()`: Função de interrupção que detecta o pressionamento dos botões.
+  - `pisca_led()`: Faz o LED piscar 5x por segundo na cor vermelha.
+  - `interrupcao()`: Função de interrupção que detecta o pressionamento dos botões e faz o debouncing.
   - `main()`: Função principal que inicializa o sistema e gerencia a exibição dos padrões na matriz de LEDs.
 
 ## Como Funciona
