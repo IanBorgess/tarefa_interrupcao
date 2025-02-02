@@ -2,8 +2,6 @@
 
 Este projeto utiliza um Raspberry Pi Pico para controlar uma matriz de LEDs, permitindo a exibição dos números de 0 a 9 através da interação com dois botões. Link para o vídeo a seguir:
 
-[Clique aqui para ver o vídeo do projeto](https://youtube.com/shorts/A-6HVkjLbcQ?feature=share).
-
 ## Descrição do Projeto
 
 O projeto consiste em uma matriz de LEDs que exibe os números de 0 a 9 na matriz de leds WS2812. Dois botões são utilizados para navegar entre os desenhos: um botão para avançar e outro para retroceder. Além disso, um LED pisca continuamente em vermelho para indicar que o sistema está em funcionamento.
